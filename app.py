@@ -79,6 +79,18 @@ def exercicio_10():
     print("=" * 21)
     print("#" * 21)
 
+def exercicio_11():
+    """Mistura de poções do mago"""
+    print("Dev. Valdeney Sousa Amaral")
+    print("Turma 186")
+    print()
+    print("01. Um mago precisa misturar duas substâncias para criar uma poção.")
+    print("Peça ao usuário os dois volumes (em ml) e exiba o total da poção")
+    print()
+    p1 = float(input('Primeira poção em ml: '))
+    p2 = float(input('Segunda poção em ml: '))
+    print(f'Soma das misturas em ml das poções: {p1 + p2} ml')
+
 def exibir_menu():
     """Exibe o menu de opções"""
     print("\n" + "="*50)
@@ -94,6 +106,7 @@ def exibir_menu():
     print("8  - Exercício 8: Jeito fácil e difícil")
     print(r"9  - Exercício 9: Padrão /\ e \/")
     print("10 - Exercício 10: Parabéns com dinossauro e bolo")
+    print("11 - Exercício 11: Mistura de Poções")
     print("0  - Sair")
     print("="*50)
 
@@ -101,7 +114,7 @@ def main():
     """Função principal com o menu"""
     while True:
         exibir_menu()
-        opcao = input("\nEscolha uma opção (0-10): ")
+        opcao = input("\nEscolha uma opção (0-11): ")
         
         print("\n" + "-"*50)
         
@@ -126,11 +139,13 @@ def main():
                 exercicio_9()
             case "10":
                 exercicio_10()
+            case "11":
+                exercicio_11()
             case "0":
                 print("Encerrando o programa. Até logo!")
                 break
             case _:
-                print("Opção inválida! Por favor, escolha um número de 0 a 10.")
+                print("Opção inválida! Por favor, escolha um número de 0 a 11.")
         
         print("-"*50)
         input("\nPressione ENTER para continuar...")

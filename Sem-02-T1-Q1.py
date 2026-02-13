@@ -1,0 +1,10 @@
+print ("exercício 1 code.run")
+print ("Dev. Valdeney Sousa Amaral")
+print ("Turma 186")
+print ()
+print ("01. Um mago precisa misturar duas substâncias para criar uma poção. Peça ao usuário os dois volumes (em ml) e exiba o total da poção")
+print ()
+p1 = float(input('Primeira poção em ml: '))
+p2 = float(input('Segunda poção em ml: '))
+
+print(' soma das  ml das poções', p1 + p2, ' ml')
